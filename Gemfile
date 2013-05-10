@@ -5,7 +5,16 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
+	gem 'faker'
+end
+
+group :production do
+	gem 'pg'
+end
+
+gem 'unicorn'
 
 
 # Gems used only for assets and not required
@@ -22,17 +31,18 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+# User Authentication
+# gem 'devise'
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+# User Authorization
+# gem 'cancan'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# Active Admin
+# gem 'activeadmin'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+# Validate URLS
+# gem 'validate_url'
 
-# To use debugger
-# gem 'debugger'
+# Omniauth
+# gem 'omniauth'
+# gem 'omniauth-facebook'

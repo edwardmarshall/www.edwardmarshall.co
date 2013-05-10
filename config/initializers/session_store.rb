@@ -1,6 +1,6 @@
 # Be sure to restart your server when you modify this file.
 
-Edwardmarshall::Application.config.session_store :cookie_store, key: '_edwardmarshall_session'
+EdwardMarshall::Application.config.session_store :cookie_store, key: '_edwardmarshall_session'
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
