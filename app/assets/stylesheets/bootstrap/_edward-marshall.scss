@@ -1,0 +1,17 @@
+// TEMP STYLES
+// -----------------------------
+html, body {
+	height: 100%;
+}
+
+section.hero {
+	display: table;
+	height: 100%;
+	vertical-align: middle;
+	width: 100%;
+
+	.vert-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
