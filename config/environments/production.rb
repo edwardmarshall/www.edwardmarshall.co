@@ -64,4 +64,22 @@ EdwardMarshall::Application.configure do
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
+
+  config.action_mailer.default_url_options = { :host => 'edwardmarshall.herokuapp.com' }
+  # config.action_mailer.default_url_options = { :host => 'www.edwardmarshall.co' }
+
+  # Send emails via AWS SES
+  # config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.smtp_settings = {
+  #   :address              => "email-smtp.us-east-1.amazonaws.com",
+  #   :port                 => 587,
+  #   :user_name            => ENV['SES_USERNAME'],
+  #   :password             => ENV['SES_PASSWORD'],
+  #   :authentication       => 'plain',
+  #   :enable_starttls_auto => true
+  # }
+
+  # config.to_prepare { Devise::SessionsController.force_ssl }
+  # config.to_prepare { Devise::RegistrationsController.force_ssl }
+  # config.to_prepare { Devise::PasswordsController.force_ssl }
 end
