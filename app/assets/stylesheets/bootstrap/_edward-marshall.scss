@@ -15,3 +15,28 @@ section.hero {
 		vertical-align: middle;
 	}
 }
+
+.site-logo {
+	margin-bottom: 100px;
+}
+
+.logo {
+	background: image-url("emLogo.png") center center no-repeat;
+	background: image-url("emLogo.svg") center center no-repeat;
+	height: 145px;
+	margin: 0 auto;
+	width: 500px;
+
+	h1 {
+		display: none;
+		visibility: hidden;
+	}	
+}
+
+.message {
+	h3 {
+		color: #999;
+		font-size: 18px;
+		line-height: 1;
+	}
+}
